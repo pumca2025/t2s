@@ -3,7 +3,7 @@ import { useA11y } from '../contexts/AccessibilityContext';
 import { SupportedLanguage } from '../types';
 import { generateSpeech, decodeAudioData } from '../services/geminiService';
 import { Button } from './Button';
-import { Play, Square, Save, RotateCcw, AlertCircle, Loader2 } from 'lucide-react';
+import { Play, Square, RotateCcw, AlertCircle, Loader2 } from 'lucide-react';
 
 interface TTSProps {
   onSaveHistory: (text: string, lang: SupportedLanguage) => void;
