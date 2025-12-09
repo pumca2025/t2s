@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SetuAI - Accessible Communication</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              a11y: {
+                bg: '#000000',
+                text: '#FFFF00',
+                highlight: '#FFFFFF',
+                card: '#1a1a1a',
+              }
+            }
+          }
+        },
+        darkMode: 'class',
+      }
+    </script>
+    <style>
+      /* Accessibility Focus Styles */
+      *:focus-visible {
+        outline: 4px solid #FACC15;
+        outline-offset: 2px;
+      }
+      .high-contrast {
+        background-color: #000000;
+        color: #FFFF00;
+      }
+      .high-contrast .bg-white {
+        background-color: #111111;
+        color: #FFFF00;
+      }
+      .high-contrast .text-gray-600, 
+      .high-contrast .text-gray-500,
+      .high-contrast .text-gray-900 {
+        color: #FFFF00;
+      }
+      .high-contrast button {
+        border: 2px solid #FFFF00;
+      }
+      .text-xxl {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.32.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 text-slate-900 antialiased min-h-screen">
+    <div id="root"></div>
+  </body>
+</html>

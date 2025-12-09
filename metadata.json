@@ -1,0 +1,7 @@
+{
+  "name": "SetuAI - Accessible Indian Language Bridge",
+  "description": "An accessible Text-to-Speech and Speech-to-Text tool designed for disabled users, supporting major Indian languages.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
